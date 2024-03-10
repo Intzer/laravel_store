@@ -7,6 +7,6 @@ git pull
 composer update
 ./vendor/bin/sail stop
 ./vendor/bin/sail up -d
-./vendor/bin/sail artisan migrate:force
+./vendor/bin/sail artisan migrate --force
 echo 'done'
 @endtask
