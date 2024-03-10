@@ -4,7 +4,7 @@
 echo 'starting'
 cd /home/vlad/laravel_store/
 git pull
-composer update --no-dev
+composer update
 ./vendor/bin/sail stop
 ./vendor/bin/sail up -d
 ./vendor/bin/sail artisan migrate
