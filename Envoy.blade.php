@@ -3,10 +3,10 @@
 @task('deploy', ['on' => 'vds'])
 echo 'starting'
 cd /home/vlad/laravel_store/
-./vendor/bin/sail sail stop
+./vendor/bin/sail stop
 git pull
 composer install
 ./vendor/bin/sail migrate
-./vendor/bin/sail sail up -d
+./vendor/bin/sail up -d
 echo 'done'
 @endtask
